@@ -14,13 +14,14 @@ export default function UseRef() {
   const emailRef = useRef();
   const cityRef = useRef();
 
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    const name=nameRef.current.value;
-    const age=ageRef.current.value;
-    const email=emailRef.current.value;
-    const city=cityRef.current.value;
-    setMyData({name, age, email, city});
+  const handleSubmit=()=>{
+    setMyData({
+   
+    name:nameRef.current.value,
+    age:ageRef.current.value,
+    email:emailRef.current.value,
+    city:cityRef.current.value,
+  })
   }
 
   return (
