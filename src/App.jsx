@@ -1,20 +1,16 @@
-import './App.css'
-import UseRef from './components/UseRef'
-import { BrowserRouter } from 'react-router-dom'
-
-
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import UseRef from './Components/UseRef';
 
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-        <div>
-          <UseRef/>
-        </div>
-      </BrowserRouter>
-    </>
-  )
+    <BrowserRouter>
+    <Router>
+      <Routes>
+        <Route path="/" element={<UseRef />} />
+      </Routes>
+    </Router>
+    </BrowserRouter>
+  );
 }
-
-export default App
+export default App;
