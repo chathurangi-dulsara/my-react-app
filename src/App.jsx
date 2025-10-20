@@ -5,11 +5,11 @@ import UseRef from './Components/UseRef';
 function App() {
   return (
     <BrowserRouter>
-    <Router>
+    
       <Routes>
         <Route path="/" element={<UseRef />} />
       </Routes>
-    </Router>
+
     </BrowserRouter>
   );
 }
