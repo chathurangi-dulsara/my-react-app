@@ -23,10 +23,14 @@ export default function UseRef() {
       email: emailRef.current.value,
       city: cityRef.current.value,
     });
+
+    nameRef.current.focus();
+    
     nameRef.current.value = "";
     ageRef.current.value = "";
     emailRef.current.value = "";
     cityRef.current.value = "";
+
   };
 
   return (
@@ -88,8 +92,8 @@ export default function UseRef() {
         </form>
       </div>
 
-      {myData.name && (
-        <div className="mt-8 w-96 bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+      {myData.name&& myData.age &&myData.email &&myData.city && (
+        <div className="mt-8 w-96 bg-white rounded-xl shadow-lg  border border-gray-200">
           <div className="text-center mb-4">
             <h3 className="text-xl font-semibold text-blue-700">
               Submitted Details
