@@ -99,7 +99,7 @@ export default function UseRef() {
               Submitted Details
             </h3>
             <p className="text-gray-500 text-sm">
-              Here’s what you entered
+              Here' s what you entered
             </p>
           </div>
 
