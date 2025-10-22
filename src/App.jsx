@@ -1,16 +1,22 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-import UseRef from './Components/UseRef';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UseRef from './Components/UseRef'
+import UserAuth from './Context/useContext';
+import Login from './Components/Login';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+    {<UserAuth>
+      <Login/>
+      </UserAuth>}
+    {/* <BrowserRouter>
     
       <Routes>
         <Route path="/" element={<UseRef />} />
       </Routes>
-
-    </BrowserRouter>
+    </BrowserRouter> */}
+    </>
   );
 }
 export default App;
