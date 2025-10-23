@@ -10,10 +10,9 @@ function App() {
   return (
     <>
     {<UserAuth>
-      <UserActivity>
+     
       <Login/>
-      <UserInput/>
-      </UserActivity>
+
       </UserAuth>}
     {/* <BrowserRouter>
     

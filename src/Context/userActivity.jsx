@@ -7,7 +7,7 @@ export const UserActivity=({children})=>{
         image:"",
         email:"",
         city:" ",
-        position:""
+        position:"",
     })
 
    
