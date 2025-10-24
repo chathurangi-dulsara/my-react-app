@@ -17,6 +17,8 @@ export default function Login() {
           <h1 className="text-3xl font-semibold text-center text-blue-700 mb-6 tracking-wide">
             Welcome User logged in : {userDetails.userId}
             <UserInput/>
+            {/* <UserInput value={state,dispatch}/> */}
+          
           </h1>
 
         </div>
