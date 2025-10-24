@@ -9,17 +9,33 @@ export default function HandleSubmit(username,age,setFun) {
     age.current.value = "";
 
 }
-export const handleUserInput = (image, email, city, position, setFun) => {
+// export const handleUserInput = (image, email, city, position, setFun) => {
+//     setFun((pre) => ({
+//       ...pre,
+//       image: image.current.value,
+//       email: email.current.value,
+//       city: city.current.value,
+//       position: position.current.value,
+//     }));
+
+//     image.current.value="",
+//     email.current.value="",
+//     city.current.value="",
+//     position.current.value="";
+//   };
+
+  export const handleUserInput = (type, image, email, city, position, setFun) => {
     setFun((pre) => ({
       ...pre,
+      type: type,
       image: image.current.value,
       email: email.current.value,
       city: city.current.value,
       position: position.current.value,
     }));
 
-    image.current.value="",
-    email.current.value="",
-    city.current.value="",
-    position.current.value="";
+    image.current.value = "";
+    email.current.value = "";
+    city.current.value = "";
+    position.current.value = "";
   };
