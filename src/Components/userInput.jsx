@@ -5,7 +5,7 @@ import { handleUserInput } from "../Utils/userValidate";
 import { Action } from "../Reducers/userActivityReducer";
 
 export default function UserInput() {
-  const { state = {}, dispatch = () => {} } = useContext(userDataaa);
+  const { image, email, city, position, dispatch = () => {} } = useContext(userDataaa);
   const { userDetails = {} } = useContext(userData1);
 
   const imageRef = useRef();
@@ -63,16 +63,16 @@ export default function UserInput() {
           </div>
           <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 space-y-2">
             <p>
-              <span className="font-semibold">Image:</span> {state.image || " "}
+              <span className="font-semibold">Image:</span> {image || " "}
             </p>
             <p>
-              <span className="font-semibold">Email: </span> {state.email || " "}
+              <span className="font-semibold">Email: </span> {email || " "}
             </p>
             <p>
-              <span className="font-semibold">City:</span>  {state.city || " "}
+              <span className="font-semibold">City:</span>  {city || " "}
             </p>
             <p>
-              <span className="font-semibold">Position: </span> {state.position || " "}
+              <span className="font-semibold">Position: </span> {position || " "}
             </p>
           </div>
         </div>
