@@ -8,8 +8,7 @@ const useData = (Location) => {
 
   const fetchData = async (getLocation=Location) => {
       try {
-        const response = await axios.get(url);
-        const data = response.data;
+        const { data } = await axios.get(url);
         if (data){
           console.log("Fetched data:", data);
           setData(data);
