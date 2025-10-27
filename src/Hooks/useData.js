@@ -8,7 +8,7 @@ const useData = (Location) => {
 
   const fetchData = async (getLocation=Location) => {
       try {
-        const { data } = await axios.get(url);
+        const { data } = await axios.get(url); // Destructuring to get data directly from response {data, status, headers}
         if (data){
           console.log("Fetched data:", data);
           setData(data);
